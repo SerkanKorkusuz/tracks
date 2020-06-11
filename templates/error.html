@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}No Results From Tracks{% endblock %}
+{% block content %}
+
+    {% if error_msg %}
+        <div style="text-align: center; color: white; margin-top: 10%;">
+            <h2>{{ error_msg[0] }}<a href="{{ url_for('search') }}">{{ error_msg[1] }}</a>{{ error_msg[2] }}</h2>
+        </div>
+    {% endif %}
+
+{% endblock %}

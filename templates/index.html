@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Tracks{% endblock %}
+{% block content %}
+
+    <div id="cover">
+        <form action="/genre">
+            <div class="tb">
+                <div class="td">
+                    <input type="text" name="genre" placeholder="Favourite Genre" required>
+                </div>
+                <div class="td" id="s-cover">
+                    <button type="submit">
+                        <div id="s-circle"></div>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
